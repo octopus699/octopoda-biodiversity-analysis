@@ -344,11 +344,11 @@ The results show that global Octopoda occurrence records can reveal meaningful g
 
 ## Repository Structure
 
-```text
-octopoda-biodiversity-analysis/
+
+<pre class="repo-tree"><code>octopoda-biodiversity-analysis/
 │
 ├── README.md
-│
+├── index.md
 ├── assets/
 │   ├── workflow/
 │   ├── data-quality/
@@ -362,3 +362,4 @@ octopoda-biodiversity-analysis/
 ├── notebooks/
 ├── powerbi/
 └── references/
+</code></pre>
