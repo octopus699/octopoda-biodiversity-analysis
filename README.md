@@ -2,18 +2,6 @@
 
 Global analysis of Octopoda occurrence records using OBIS data, Python, K-Means clustering, sea surface temperature (SST) trend modelling and Power BI.
 
-## Project Overview
-
-This project explores global Octopoda occurrence patterns and their environmental context using public biodiversity data from the Ocean Biodiversity Information System (OBIS).
-
-The project follows an end-to-end data science workflow covering data cleaning, exploratory data analysis, spatial feature engineering, K-Means clustering, cluster validation, SST trend modelling, environmental relationship analysis and interactive Power BI visualisation.
-
-Because the occurrence records are distributed globally, latitude and longitude were transformed into three-dimensional spherical coordinates before K-Means clustering. This reduces the distortion caused by treating the Earth as a flat two-dimensional surface.
-
-The analysis is exploratory. OBIS occurrence records represent where organisms have been recorded and should not be interpreted as direct evidence of population abundance, migration or causal ecological change.
-
-
-
 ## Technologies & Skills
 
 ![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue)
@@ -24,6 +12,24 @@ The analysis is exploratory. OBIS occurrence records represent where organisms h
 ![OBIS](https://img.shields.io/badge/OBIS-Marine%20Biodiversity-teal)
 
 **Methods:** K-Means Clustering · Elbow Method · Silhouette Score · Weighted Linear Regression · Correlation Analysis · Feature Engineering · ETL
+
+## Project Highlights
+
+- **12 geographical clusters** identified from global Octopoda occurrence records.
+- **0.6812 Silhouette Score** achieved at K = 12 during cluster validation.
+- **60,154 occurrence records** used across 11 clusters for SST trend modelling.
+- Estimated regional SST trends ranged from approximately **-1.2 °C to +2.7 °C per decade**.
+- Power BI dashboard developed to communicate spatial patterns, environmental trends and data-quality limitations.
+
+## Project Overview
+
+This project explores global Octopoda occurrence patterns and their environmental context using public biodiversity data from the Ocean Biodiversity Information System (OBIS).
+
+The project follows an end-to-end data science workflow covering data cleaning, exploratory data analysis, spatial feature engineering, K-Means clustering, cluster validation, SST trend modelling, environmental relationship analysis and interactive Power BI visualisation.
+
+Because the occurrence records are distributed globally, latitude and longitude were transformed into three-dimensional spherical coordinates before K-Means clustering. This reduces the distortion caused by treating the Earth as a flat two-dimensional surface.
+
+The analysis is exploratory. OBIS occurrence records represent where organisms have been recorded and should not be interpreted as direct evidence of population abundance, migration or causal ecological change.
 
 ---
 
