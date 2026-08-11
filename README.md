@@ -96,6 +96,11 @@ The number of clusters was evaluated across **K = 2–15** using two validation 
 
 ![Elbow validation](assets/clustering/elbow-validation.png)
 
+<p align="center">
+  <img src="assets/clustering/elbow-validation.png" alt="Elbow validation" width="650">
+</p>
+
+
 The elbow curve began to flatten around **K = 6–8**, indicating diminishing improvements in cluster compactness as additional clusters were introduced.
 
 ![Silhouette validation](assets/clustering/silhouette-validation.png)
