@@ -12,6 +12,8 @@ Because the occurrence records are distributed globally, latitude and longitude 
 
 The analysis is exploratory. OBIS occurrence records represent where organisms have been recorded and should not be interpreted as direct evidence of population abundance, migration or causal ecological change.
 
+---
+
 ## Contents
 
 - [Analytical Workflow](#analytical-workflow)
@@ -26,6 +28,8 @@ The analysis is exploratory. OBIS occurrence records represent where organisms h
 - [Limitations and Future Work](#limitations-and-future-work)
 - [Conclusion](#conclusion)
 - [Repository Structure](#repository-structure)
+
+---
 
 ## Analytical Workflow
 
