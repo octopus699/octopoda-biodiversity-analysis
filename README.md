@@ -12,6 +12,19 @@ Because the occurrence records are distributed globally, latitude and longitude 
 
 The analysis is exploratory. OBIS occurrence records represent where organisms have been recorded and should not be interpreted as direct evidence of population abundance, migration or causal ecological change.
 
+
+
+## Technologies & Skills
+
+![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue)
+![pandas](https://img.shields.io/badge/pandas-Data%20Preparation-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Machine%20Learning-orange)
+![statsmodels](https://img.shields.io/badge/statsmodels-Regression-lightgrey)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![OBIS](https://img.shields.io/badge/OBIS-Marine%20Biodiversity-teal)
+
+**Methods:** K-Means Clustering · Elbow Method · Silhouette Score · Weighted Linear Regression · Correlation Analysis · Feature Engineering · ETL
+
 ---
 
 ## Contents
