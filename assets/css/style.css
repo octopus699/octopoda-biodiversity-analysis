@@ -198,3 +198,62 @@ hr {
     font-family: Consolas, "Courier New", monospace;
     font-size: 15px;
 }
+
+
+/* HERO */
+
+.hero {
+    padding: 35px 0 20px;
+}
+
+.hero-text {
+    max-width: 850px;
+    margin-bottom: 45px;
+}
+
+.hero-label {
+    margin-bottom: 12px;
+
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin-bottom: 22px;
+
+    font-size: clamp(46px, 7vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.hero-description {
+    max-width: 800px;
+    margin: 0;
+
+    color: var(--text-secondary);
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.hero-image {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 950px;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.hero-image p {
+    margin-top: 12px;
+
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+}
