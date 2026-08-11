@@ -62,7 +62,7 @@ Key preparation steps included:
 ### ETL and Coordinate Validation
 
 <p align="center">
-  <img src="assets/data-quality/etl-dataset-summary.png" alt="ETL dataset summary" width="300">
+  <img src="assets/data-quality/etl-dataset-summary.png" alt="ETL dataset summary" width="600">
 </p>
 
 The ETL process confirmed that geographical coordinates were sufficiently complete for spatial modelling and reduced the original dataset to the fields required for analysis.
@@ -70,13 +70,13 @@ The ETL process confirmed that geographical coordinates were sufficiently comple
 ### Duplicate and Data Quality Checks
 
 <p align="center">
-  <img src="assets/data-quality/duplicate-checks.png" alt="Duplicate checks" width="700">
+  <img src="assets/data-quality/duplicate-checks.png" alt="Duplicate checks" width="600">
 </p>
 
 No duplicated record IDs were identified. However, 20,901 repeated combinations of scientific name, coordinates and event date were detected. These were retained cautiously because repeated combinations may represent legitimate occurrence observations rather than exact duplicate records.
 
 <p align="center">
-  <img src="assets/data-quality/missing-values-assessment.png" alt="Missing values assessment" width="700">
+  <img src="assets/data-quality/missing-values-assessment.png" alt="Missing values assessment" width="600">
 </p>
 
 Missing-value analysis was used to determine which variables were suitable for modelling and which required more cautious interpretation.
@@ -84,7 +84,7 @@ Missing-value analysis was used to determine which variables were suitable for m
 ### Taxonomic Completeness
 
 <p align="center">
-  <img src="assets/data-quality/taxonomic-completeness.png" alt="Taxonomic completeness" width="700">
+  <img src="assets/data-quality/taxonomic-completeness.png" alt="Taxonomic completeness" width="600">
 </p>
 
 Scientific name was available for all records, while species-level identification had the greatest missingness at approximately 47%. The dashboard therefore preserves broader taxonomic levels and makes unidentified categories visible instead of silently excluding them.
@@ -138,7 +138,7 @@ A second analytical layer estimated regional sea surface temperature (SST) trend
 To improve reliability, only cluster-years with at least **10 SST observations** were included in the regression. A cluster also required at least **3 qualifying years** to produce a valid temporal trend.
 
 <p align="center">
-  <img src="assets/sst-analysis/sst-trend-analysis-summary.png" alt="SST Trend Analysis Summary" width="750">
+  <img src="assets/sst-analysis/sst-trend-analysis-summary.png" alt="SST Trend Analysis Summary" width="600">
 </p>
 
 Of the 12 geographical clusters, **11 contained sufficient temporal data for SST trend modelling**, covering 60,154 occurrence records. The Tropical Atlantic / Offshore cluster was not modelled because only one year met the minimum requirement of 10 SST observations.
@@ -146,13 +146,13 @@ Of the 12 geographical clusters, **11 contained sufficient temporal data for SST
 ### Estimated SST Trends
 
 <p align="center">
-  <img src="assets/sst-analysis/sst-trend-by-cluster.png" alt="SST trend by cluster" width="750">
+  <img src="assets/sst-analysis/sst-trend-by-cluster.png" alt="SST trend by cluster" width="650">
 </p>
 
 Estimated SST trends varied substantially between regions, ranging from approximately **-1.2 °C to 2.7 °C per decade**, with a mean estimated trend of approximately **0.4 °C per decade** across the analysed clusters.
 
 <p align="center">
-  <img src="assets/sst-analysis/sst-trend-strength.png" alt="SST trend strength" width="700">
+  <img src="assets/sst-analysis/sst-trend-strength.png" alt="SST trend strength" width="600">
 </p>
 
 The 11 analysed clusters were classified into trend-strength categories:
