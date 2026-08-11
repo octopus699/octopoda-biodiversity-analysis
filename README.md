@@ -29,6 +29,22 @@ Global analysis of Octopoda occurrence records using OBIS data, Python, K-Means 
 - Estimated regional SST trends ranged from approximately **-1.2 °C to +2.7 °C per decade**.
 - Power BI dashboard developed to communicate spatial patterns, environmental trends and data-quality limitations.
 
+## Data Quality Highlights
+
+The project explicitly assessed data completeness and source limitations before modelling.
+
+- **47.1%** of records were missing species-level identification.
+- **31.4%** of records contained quality flags.
+- **25.7%** of records were missing depth values.
+- **41.5%** of records had no specified source dataset.
+- No duplicated record IDs were detected, although **20,901 repeated combinations** of scientific name, coordinates and event date required cautious interpretation.
+
+These limitations were preserved and communicated in the Power BI dashboard rather than hidden during data preparation.
+
+<p align="center">
+  <img src="assets/dashboard/data-quality-dashboard.png" alt="Power BI data quality dashboard" width="850">
+</p>
+
 ## Project Overview
 
 This project explores global Octopoda occurrence patterns and their environmental context using public biodiversity data from the Ocean Biodiversity Information System (OBIS).
