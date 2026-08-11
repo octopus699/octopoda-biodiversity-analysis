@@ -62,7 +62,7 @@ Key preparation steps included:
 ### ETL and Coordinate Validation
 
 <p align="center">
-  <img src="assets/data-quality/etl-dataset-summary.png" alt="ETL dataset summary" width="700">
+  <img src="assets/data-quality/etl-dataset-summary.png" alt="ETL dataset summary" width="300">
 </p>
 
 The ETL process confirmed that geographical coordinates were sufficiently complete for spatial modelling and reduced the original dataset to the fields required for analysis.
