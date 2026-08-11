@@ -178,3 +178,23 @@ hr {
         padding-top: 40px;
     }
 }
+
+.repo-tree {
+    padding: 24px;
+    overflow-x: auto;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    line-height: 1.6;
+}
+
+.repo-tree code {
+    padding: 0;
+    background: transparent;
+    color: var(--text-secondary);
+
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 15px;
+}
