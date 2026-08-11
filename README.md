@@ -14,7 +14,9 @@ The analysis is exploratory. OBIS occurrence records represent where organisms h
 
 ## Analytical Workflow
 
-![End-to-end analytical workflow](assets/workflow/analytical-workflow.png)
+<p align="center">
+  <img src="assets/workflow/analytical-workflow.png" alt="End-to-end analytical workflow" width="750">
+</p>
 
 The workflow combines public biodiversity data, Python-based ETL and modelling, and Power BI reporting to move from raw occurrence records to geographical clustering, environmental trend analysis and interactive visualisation.
 
@@ -59,23 +61,31 @@ Key preparation steps included:
 
 ### ETL and Coordinate Validation
 
-![ETL dataset summary](assets/data-quality/etl-dataset-summary.png)
+<p align="center">
+  <img src="assets/data-quality/etl-dataset-summary.png" alt="ETL dataset summary" width="700">
+</p>
 
 The ETL process confirmed that geographical coordinates were sufficiently complete for spatial modelling and reduced the original dataset to the fields required for analysis.
 
 ### Duplicate and Data Quality Checks
 
-![Duplicate checks](assets/data-quality/duplicate-checks.png)
+<p align="center">
+  <img src="assets/data-quality/duplicate-checks.png" alt="Duplicate checks" width="700">
+</p>
 
 No duplicated record IDs were identified. However, 20,901 repeated combinations of scientific name, coordinates and event date were detected. These were retained cautiously because repeated combinations may represent legitimate occurrence observations rather than exact duplicate records.
 
-![Missing values assessment](assets/data-quality/missing-values-assessment.png)
+<p align="center">
+  <img src="assets/data-quality/missing-values-assessment.png" alt="Missing values assessment" width="700">
+</p>
 
 Missing-value analysis was used to determine which variables were suitable for modelling and which required more cautious interpretation.
 
 ### Taxonomic Completeness
 
-![Taxonomic completeness](assets/data-quality/taxonomic-completeness.png)
+<p align="center">
+  <img src="assets/data-quality/taxonomic-completeness.png" alt="Taxonomic completeness" width="700">
+</p>
 
 Scientific name was available for all records, while species-level identification had the greatest missingness at approximately 47%. The dashboard therefore preserves broader taxonomic levels and makes unidentified categories visible instead of silently excluding them.
 
@@ -94,8 +104,6 @@ The number of clusters was evaluated across **K = 2–15** using two validation 
 - **Elbow Method** to examine reductions in within-cluster inertia.
 - **Silhouette Score** to measure how well separated the resulting clusters were.
 
-![Elbow validation](assets/clustering/elbow-validation.png)
-
 <p align="center">
   <img src="assets/clustering/elbow-validation.png" alt="Elbow validation" width="650">
 </p>
@@ -103,17 +111,23 @@ The number of clusters was evaluated across **K = 2–15** using two validation 
 
 The elbow curve began to flatten around **K = 6–8**, indicating diminishing improvements in cluster compactness as additional clusters were introduced.
 
-![Silhouette validation](assets/clustering/silhouette-validation.png)
+<p align="center">
+  <img src="assets/clustering/silhouette-validation.png" alt="Silhouette validation" width="650">
+</p>
 
 The Silhouette Score reached its highest value at **K = 12 (0.681195)** before declining at K = 13. Although the two validation methods did not identify exactly the same optimum, K = 12 provided the strongest cluster separation among the tested solutions while preserving useful geographical detail.
 
 ### Final Geographical Clusters
 
-![Cluster summary](assets/clustering/cluster-summary.png)
+<p align="center">
+  <img src="assets/clustering/cluster-summary.png" alt="Cluster summary" width="700">
+</p>
 
 The final K-Means model produced **12 broad geographical clusters**. Cluster sizes varied considerably, from 1,074 records in the Tropical Atlantic / Offshore cluster to 14,226 records in the Eastern North Pacific / California Coast cluster.
 
-![Global cluster map](assets/clustering/global-cluster-map.png)
+<p align="center">
+  <img src="assets/clustering/global-cluster-map.png" alt="Global cluster map" width="750">
+</p>
 
 The resulting groups formed geographically interpretable regions across the Atlantic, Pacific, Southern Ocean and Mediterranean. These clusters were then used as regional analytical units for the subsequent environmental and SST trend analysis.
 
@@ -123,17 +137,23 @@ A second analytical layer estimated regional sea surface temperature (SST) trend
 
 To improve reliability, only cluster-years with at least **10 SST observations** were included in the regression. A cluster also required at least **3 qualifying years** to produce a valid temporal trend.
 
-![SST trend analysis summary](assets/sst-analysis/sst-trend-analysis-summary.png)
+<p align="center">
+  <img src="assets/sst-analysis/sst-trend-analysis-summary.png" alt="SST Trend Analysis Summary" width="750">
+</p>
 
 Of the 12 geographical clusters, **11 contained sufficient temporal data for SST trend modelling**, covering 60,154 occurrence records. The Tropical Atlantic / Offshore cluster was not modelled because only one year met the minimum requirement of 10 SST observations.
 
 ### Estimated SST Trends
 
-![SST trend by cluster](assets/sst-analysis/sst-trend-by-cluster.png)
+<p align="center">
+  <img src="assets/sst-analysis/sst-trend-by-cluster.png" alt="SST trend by cluster" width="750">
+</p>
 
 Estimated SST trends varied substantially between regions, ranging from approximately **-1.2 °C to 2.7 °C per decade**, with a mean estimated trend of approximately **0.4 °C per decade** across the analysed clusters.
 
-![SST trend strength](assets/sst-analysis/sst-trend-strength.png)
+<p align="center">
+  <img src="assets/sst-analysis/sst-trend-strength.png" alt="SST trend strength" width="700">
+</p>
 
 The 11 analysed clusters were classified into trend-strength categories:
 
@@ -145,17 +165,23 @@ The 11 analysed clusters were classified into trend-strength categories:
 
 ### Cluster-Level Inspection
 
-![Cluster SST trend detail](assets/sst-analysis/cluster-sst-trend-detail.png)
+<p align="center">
+  <img src="assets/sst-analysis/cluster-sst-trend-detail.png" alt="Cluster SST trend detail" width="800">
+</p>
 
 The Power BI dashboard allows individual clusters to be inspected in more detail, comparing observed yearly SST values with the estimated long-term regression trend.
 
 ### Weighting and Temporal Coverage
 
-![SST regression weighting](assets/sst-analysis/sst-regression-weighting.png)
+<p align="center">
+  <img src="assets/sst-analysis/sst-regression-weighting.png" alt="SST regression weighting" width="700">
+</p>
 
 Record count was used as a regression weight so that cluster-years with more observations had greater influence on the estimated trend.
 
-![Occurrence records by decade](assets/sst-analysis/occurrence-records-by-decade.png)
+<p align="center">
+  <img src="assets/sst-analysis/occurrence-records-by-decade.png" alt="Occurrence records by decade" width="700">
+</p>
 
 The strong increase in occurrence records from the 1980s onwards demonstrates why temporal results require cautious interpretation. Changes in the number of records may reflect sampling and publication effort as well as biological occurrence.
 
@@ -172,11 +198,15 @@ The analysis considered:
 
 Correlation and simple regression were first used to assess direct relationships. Multiple regression models were then used to examine whether explanatory power improved after accounting for **year** and **geographical cluster**.
 
-![Environmental relationships](assets/environmental-analysis/sst-environmental-correlations.png)
+<p align="center">
+  <img src="assets/environmental-analysis/sst-environmental-correlations.png" alt="Environmental relationships" width="750">
+</p>
 
 SST alone showed weak direct relationships with most of the environmental variables examined. This indicates that temperature by itself does not strongly explain the broader environmental context of Octopoda occurrence records.
 
-![Correlation strength summary](assets/environmental-analysis/correlation-strength-summary.png)
+<p align="center">
+  <img src="assets/environmental-analysis/correlation-strength-summary.png" alt="Correlation strength summary" width="700">
+</p>
 
 The multiple regression analysis provided stronger explanatory power after controlling for geographical cluster and year, suggesting that **regional and temporal context is more informative than SST alone**.
 
@@ -190,13 +220,17 @@ The dashboard was structured into dedicated pages so that users could move from 
 
 ### Cluster Analysis
 
-![Cluster analysis dashboard](assets/dashboard/cluster-analysis-dashboard.png)
+<p align="center">
+  <img src="assets/dashboard/cluster-analysis-dashboard.png" alt="Cluster analysis dashboard" width="850">
+</p>
 
 The Cluster Analysis page combines the global K-Means map with cluster record counts and dominant taxonomic groups. This allows geographical distribution patterns to be explored alongside the species and families associated with each region.
 
 ### Data Quality and Limitations
 
-![Data quality dashboard](assets/dashboard/data-quality-dashboard.png)
+<p align="center">
+  <img src="assets/dashboard/data-quality-dashboard.png" alt="Data quality dashboard" width="850">
+</p>
 
 The Data Quality and Limitations page makes important source-data issues visible rather than hiding them. Key limitations include incomplete species-level identification, missing depth values, quality flags and records without a specified source dataset.
 
