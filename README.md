@@ -2,6 +2,14 @@
 
 Global analysis of Octopoda occurrence records using OBIS data, Python, K-Means clustering, sea surface temperature (SST) trend modelling and Power BI.
 
+<p align="center">
+  <img src="assets/clustering/global-cluster-map.png" alt="Global Octopoda geographical clusters" width="850">
+</p>
+
+<p align="center">
+  <em>Global distribution of the twelve geographical K-Means clusters identified from Octopoda occurrence records.</em>
+</p>
+
 ## Technologies & Skills
 
 ![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue)
