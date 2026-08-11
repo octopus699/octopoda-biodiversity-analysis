@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} | Octopoda Biodiversity Analysis</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+
+        <a class="site-title" href="{{ '/' | relative_url }}">
+            Octopoda Biodiversity Analysis
+        </a>
+
+        <nav class="site-nav">
+            <a href="#overview">Overview</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#clustering">Clustering</a>
+            <a href="#sst">SST Analysis</a>
+            <a href="#dashboard">Power BI</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="page-content">
+    {{ content }}
+</main>
+
+<footer class="site-footer">
+    <p>Octopoda Biodiversity Analysis · Data Science Portfolio Project</p>
+</footer>
+
+</body>
+
+</html>
