@@ -92,6 +92,7 @@ The analysis is exploratory. OBIS occurrence records represent where organisms h
 - [Limitations and Future Work](#limitations-and-future-work)
 - [Conclusion](#conclusion)
 - [Repository Structure](#repository-structure)
+- [References](#references)
 
 ---
 
@@ -358,8 +359,11 @@ This project demonstrates an end-to-end data science workflow using public marin
 
 The results show that global Octopoda occurrence records can reveal meaningful geographical and environmental patterns when analysed carefully. At the same time, the project highlights the importance of validating modelling decisions and communicating uncertainty, particularly when working with occurrence data affected by uneven sampling, incomplete taxonomy and changing recording effort.
 
-## Repository Structure
+## References
 
+The full bibliography and supporting sources for this project are available in the [References](references/references.md) document.
+
+## Repository Structure
 
 <pre class="repo-tree"><code>octopoda-biodiversity-analysis/
 │
